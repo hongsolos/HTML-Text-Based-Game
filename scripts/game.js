@@ -3,33 +3,9 @@
 //
 //SETS ALL VARIABLES FOR THE GAME
 //
-cellunlocked = false;
-beentohallway = false;
-beentorture = false;
-beenmorgue = false;
-beentowesthall = false;
-beentobonus = false;
-exitunlocked = false;
-beentoexit = false;
-//inventory
-paperclip = false;
-deadbugs = false;
-lunchtray = false;
-torch = false;
-note = false;
-knife = false;
-hat = false;
-whip = false;
-key = false;
-powder = false;
-//
-currentroom = "jail";
-searchtable = false;
-crate = false;
-zombiedead = false;
-//
-//
-//
+
+name = "none"
+
 $(document).ready(function() {
 	$("#compass").fadeIn(3000);
 	$("#message_begin").fadeIn(3000);
@@ -56,10 +32,21 @@ $(document).ready(function() {
 		//
 		
 		
+		else if (input.indexOf("boy") > - 1 || input.indexOf("girl") > -1){
+			if(input == "boy") {
+				$('<p>Put code for boy here.</p>').insertBefore("#placeholder").fadeIn(1000);
+			}
+			else if(input == "girl"){
+				$('<p>Put code for girl here.</p>').insertBefore("#placeholder").fadeIn(1000);
+			}
+			else {
+				$('<p>Please enter boy or girl.</p>').insertBefore("#placeholder").fadeIn(1000);
+			}
+		}
 		
 		
 		
-		
+		/*
 		//
 		//take
 		//
@@ -762,7 +749,7 @@ $(document).ready(function() {
 		//
 		//end go
 		//
-				
+		*/		
 				
 				
 				
