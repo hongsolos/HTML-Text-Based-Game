@@ -1,8 +1,8 @@
 // JavaScript Document
 
 //
-academic = 0;
-social = 0;
+var academic = 0;
+var social = 0;
 
 
 
@@ -64,7 +64,7 @@ function test1(){
 		$("#pic").attr('src',"images/lost1.jpg");
 		$("#btn1").attr("onclick","result1A()");
 		$("#btn2").attr("onclick","result1B()");
-	
+		
 };
 function result1A(){
 		$("#area_main").html("After asking a friendly stranger for directions, you get to class on time and manage to get a seat in the front of the class.").fadeIn(3000);
@@ -72,6 +72,8 @@ function result1A(){
 		$("#btn2").html('Next');
 		$("#btn1").attr("onclick","test2()");
 		$("#btn2").attr("onclick","test2()");
+		academic += 1;
+		social += 1;
 };
 function result1B(){
 		$("#area_main").html("After wandering around for 10 minutes, you finally get to class and sit in the back of the class.").fadeIn(3000);
@@ -97,6 +99,7 @@ function result2A(){
 		$("#btn2").html('Next');
 		$("#btn1").attr("onclick","test3()");
 		$("#btn2").attr("onclick","test3()");
+		academic += 1;
 	
 };
 function result2B(){
@@ -105,6 +108,7 @@ function result2B(){
 		$("#btn2").html('Next');
 		$("#btn1").attr("onclick","test3()");
 		$("#btn2").attr("onclick","test3()");
+		social += 1;
 	
 };
 ////////////////////////////////////////////////////
@@ -124,6 +128,7 @@ function result3A(){
 		$("#btn2").html('Next');
 		$("#btn1").attr("onclick","test4()");
 		$("#btn2").attr("onclick","test4()");
+		social += 2;
 	
 };
 function result3B(){
@@ -132,6 +137,7 @@ function result3B(){
 		$("#btn2").html('Next');
 		$("#btn1").attr("onclick","test4()");
 		$("#btn2").attr("onclick","test4()");
+		academic += 3;
 	
 };
 ////////////////////////////////////////////////////
@@ -159,6 +165,7 @@ function result4B(){
 		$("#btn2").html('Next');
 		$("#btn1").attr("onclick","test5()");
 		$("#btn2").attr("onclick","test5()");
+		academic +=1;
 	
 };
 ///////////////////////////////////////////////////
@@ -177,6 +184,7 @@ function result5A(){
 		$("#btn2").html('Next');
 		$("#btn1").attr("onclick","test6()");
 		$("#btn2").attr("onclick","test6()");
+		academic +=2;
 	
 };
 function result5B(){
@@ -203,6 +211,7 @@ function result6A(){
 		$("#btn2").html('Next');
 		$("#btn1").attr("onclick","test7()");
 		$("#btn2").attr("onclick","test7()");
+		academic +=1;
 	
 };
 function result6B(){
@@ -211,6 +220,7 @@ function result6B(){
 		$("#btn2").html('Next');
 		$("#btn1").attr("onclick","test7()");
 		$("#btn2").attr("onclick","test7()");
+		social += 1;
 	
 };
 ///////////////////////////////////////////////////
@@ -229,6 +239,7 @@ function result7A(){
 		$("#btn2").html('Next');
 		$("#btn1").attr("onclick","test8()");
 		$("#btn2").attr("onclick","test8()");
+		social += 1;
 	
 };
 function result7B(){
@@ -237,6 +248,7 @@ function result7B(){
 		$("#btn2").html('Next');
 		$("#btn1").attr("onclick","test8()");
 		$("#btn2").attr("onclick","test8()");
+		academic += 1;
 	
 };
 ///////////////////////////////////////////////////
@@ -267,6 +279,8 @@ function result8B(){
 };
 ///////////////////////////////////////////////////
 function test9(){
-		$("#area_main").html("Judging from how you answered these scenarios, you academic score is ... and your social score is ...").fadeIn(3000);
+
+		$("#area_main").html("Judging from how you answered these scenarios, you academic score is " + academic + " and your social score is " + social).fadeIn(3000);
+
 };
 
