@@ -112,7 +112,8 @@ function test3(){
 		$("#area_main").html("Midterms are a week away; you were invited to study with your classmates at the library. You head to Evans to study. After studying for 2 hours your friends beg you to go grab some food with them. You decide to:").fadeIn(3000);
 		$("#btn1").html('Go');
 		$("#btn2").html('Not go');
-		$("#pic").attr('src',"images/library1.jpg");
+		$("#pic").attr('src',"");
+		$("#vid").attr('src','images/library.mp4');
 		$("#btn1").attr("onclick","result3A()");
 		$("#btn2").attr("onclick","result3B()");
 	
@@ -135,6 +136,7 @@ function result3B(){
 };
 ////////////////////////////////////////////////////
 function test4(){
+	    $("#vid").attr('src','');
 		$("#area_main").html("After a few weeks, your professor emails out an announcement that midterm grades are out. You quickly pull up eCampus and clicked on grades, to see a 70 staring back at you. You are:").fadeIn(3000);
 		$("#btn1").html('Okay with it');
 		$("#btn2").html('Not okay with it');
@@ -229,7 +231,7 @@ function result7A(){
 		$("#btn2").attr("onclick","test8()");
 	
 };
-function resultB(){
+function result7B(){
 		$("#area_main").html("You studied for a while, but lost steam and fell asleep for 2 hours.").fadeIn(3000);
 		$("#btn1").html('Next');
 		$("#btn2").html('Next');
